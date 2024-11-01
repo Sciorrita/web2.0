@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Termodinámica y Aeronáutica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="newbery.ico">
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+</head>
+<body>
+    <div class="container" id="start-container">
+        <h1>Test de Termodinámica y Aeronáutica</h1>
+        <input type="text" id="player-name" placeholder="Ingresa tu nombre" />
+        <button id="start-btn">Iniciar Test</button>
+    </div>
+
+    <div class="container" id="quiz-container" style="display: none;">
+        <h1>Quiz de Termodinámica y Aeronáutica</h1>
+        <div id="question-container">
+            <p id="question"></p> <!-- Aquí se cargará la pregunta -->
+            <div id="answer-buttons" class="btn-container"></div>
+        </div>
+        <div id="score-container">
+            <p>Puntaje: <span id="score">0</span></p>
+        </div>
+    </div>
+    <div class="container" id="result-container" style="display: none;">
+        <h1>Resultado</h1>
+        <p id="result-message"></p>
+        <button id="restart-btn">Reiniciar Test</button>
+    </div>
+    <div class="container" id="history-container" style="display: none;">
+        <h1>Historial de Puntajes</h1>
+        <ul id="score-history"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
